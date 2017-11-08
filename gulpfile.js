@@ -184,8 +184,8 @@ var suffixMatrix = function (input, suffixList){
 /* Optimize all images found in imgFolders */
 /****************************************/
 gulp.task('optimize-images', function () {
-	//var theSrc = suffixMatrix(imgFolders, imageTypes);
-	//gutil.log(theSrc);
+	var theSrc = suffixMatrix(imgFolders, imageTypes);
+	gutil.log(theSrc);
     return gulp.src(imgFolders)
         .pipe(imagemin({
             progressive: true,
